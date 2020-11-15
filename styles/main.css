@@ -1,0 +1,67 @@
+/* .hero {
+  background-image: url('../assets/wood3.jpg');
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+} */
+/* .software {
+  background-image: url('../assets/galaxy.jpeg');
+} */
+body {
+  font-family: 'Cabin Sketch', cursive;
+}
+#software-container-id  {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 60vh;
+  margin: 50px;
+}
+i {
+  border: 2px solid rgba(0,0,0,.125);
+  font-size: 50px;
+  margin: 25px;
+  padding: 10px;
+}
+.topnav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+.topnav, a {
+  padding: 10px;
+  text-decoration: none;
+}
+
+.about-wrapper {
+height: 30vh;
+}
+.about-wrapper, .left-box {
+  border: 2px solid red;
+  width: 50%;
+  margin: 20px;
+} 
+.about-wrapper, .right-box {
+  border: 2px solid red;
+  width: 50%;
+
+} 
+
+.project-wrapper {
+  border: 2px solid red;
+  width: 50%;
+
+}
+.footer {
+  background-image: url("../assets/contact.jpg");
+        /* Set a specific height */
+        min-height: 300px; 
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
