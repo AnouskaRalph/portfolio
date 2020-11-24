@@ -1,3 +1,6 @@
+* {
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'Cutive', serif;
   background-color: #1f1f1f;
@@ -37,12 +40,14 @@ i {
   margin: 25px;
   padding: 10px;
 }
-.topnav {
+.nav-links {
   display: flex;
   justify-content: flex-end;
   padding: 20px;
 }
-.topnav, a {
+
+
+.nav-links, li, a {
   padding: 10px;
   margin-right: 40px;
   text-decoration: none;
@@ -68,4 +73,32 @@ line-height: 1.6;
   border: 2px solid red;
   /* width: 50%; */
   height: 80vh;
+}
+
+/* .about-wrapper {
+  animation: pulse 1.5s infinite ease-in-out;
+} */
+/* @keyframes pulse {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 12px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+} */
+
+.scroll-up-btn {
+  color: white;
+  position: fixed;
+  bottom: 6%;
+  right: 12%;
+}
+
+.project-one-image {
+  background: url(../assets/project-one.png);
+  height: 10vh;
+  background-repeat: no-repeat;
 }
