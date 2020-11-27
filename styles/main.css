@@ -207,7 +207,35 @@ i {
   /* border: red solid 2px; */
   display: flex;
   justify-content: center;
+}
 
-  
 
+.parallax-one {
+  /* The image used */
+  background-image: url("../assets/sq2.jpg");
+  background-repeat: no-repeat;
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("../assets/sq2.jpg");
+  background-repeat: no-repeat;
+
+  /* Set a specific height */
+  min-height: 400px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
