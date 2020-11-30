@@ -90,8 +90,49 @@ i {
 .scroll-up-btn {
   color: white;
   position: fixed;
-  bottom: 6%;
+  bottom: 10%;
   right: 5%;
+}
+
+.scroll-up-btn {
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: 5em;
+}
+
+.scroll-up-btn:hover {
+  -webkit-animation-name: wiggle;
+  -ms-animation-name: wiggle;
+  -ms-animation-duration: 1000ms;
+  -webkit-animation-duration: 1000ms;
+  -webkit-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  -ms-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes wiggle {
+  0% {-webkit-transform: rotate(10deg);}
+  25% {-webkit-transform: rotate(-10deg);}
+  50% {-webkit-transform: rotate(20deg);}
+  75% {-webkit-transform: rotate(-5deg);}
+  100% {-webkit-transform: rotate(0deg);}
+}
+
+@-ms-keyframes wiggle {
+  0% {-ms-transform: rotate(1deg);}
+  25% {-ms-transform: rotate(-1deg);}
+  50% {-ms-transform: rotate(1.5deg);}
+  75% {-ms-transform: rotate(-5deg);}
+  100% {-ms-transform: rotate(0deg);}
+}
+
+@keyframes wiggle {
+  0% {transform: rotate(10deg);}
+  25% {transform: rotate(-10deg);}
+  50% {transform: rotate(20deg);}
+  75% {transform: rotate(-5deg);}
+  100% {transform: rotate(0deg);}
 }
 
 /* Project Boxes */
@@ -165,13 +206,12 @@ i {
   transform: rotateY(180deg);
 }
 
- .flip-card-front-one {
+.flip-card-front-one {
   background-image: url('../assets/p13.png');
   /* background-size: 800px; */
   background-repeat: no-repeat;
   background-size: contain;
   height: 100%;
-  
 } 
 
 .flip-card-front-two {
@@ -193,8 +233,28 @@ i {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
-  
 } 
+
+.parallax-one {
+  background-image: url("../assets/parallax-bg.png");
+  background-repeat: no-repeat;
+  min-height: 500px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax {
+
+  background-image: url("../assets/parallax-bg.png");
+  background-repeat: no-repeat;
+  min-height: 400px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .contact-wrapper {
   /* background-image: url('../assets/email.png'); */
@@ -211,32 +271,3 @@ i {
 }
 
 
-.parallax-one {
-  /* The image used */
-  background-image: url("../assets/parallax-bg.png");
-  background-repeat: no-repeat;
-
-  /* Set a specific height */
-  min-height: 500px; 
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.parallax {
-  /* The image used */
-  background-image: url("../assets/parallax-bg.png");
-  background-repeat: no-repeat;
-
-  /* Set a specific height */
-  min-height: 400px; 
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
